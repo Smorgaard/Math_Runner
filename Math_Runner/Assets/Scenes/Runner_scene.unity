@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 596372057}
   - component: {fileID: 596372056}
   - component: {fileID: 596372055}
+  - component: {fileID: 596372059}
   m_Layer: 0
   m_Name: AnswerM
   m_TagString: Untagged
@@ -377,7 +378,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -448,6 +449,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2025367051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &596372059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596372054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f982a2040fe6cc469cef0c48bab6ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer_pos: 2
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +812,7 @@ GameObject:
   - component: {fileID: 844100484}
   - component: {fileID: 844100483}
   - component: {fileID: 844100482}
+  - component: {fileID: 844100487}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -907,6 +922,32 @@ Transform:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &844100487
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844100481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &886951073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,6 +1388,7 @@ GameObject:
   - component: {fileID: 1135350263}
   - component: {fileID: 1135350262}
   - component: {fileID: 1135350261}
+  - component: {fileID: 1135350265}
   m_Layer: 0
   m_Name: AnswerL
   m_TagString: Untagged
@@ -1369,7 +1411,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1440,6 +1482,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2025367051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1135350265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135350260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f982a2040fe6cc469cef0c48bab6ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer_pos: 1
 --- !u!1 &1206786657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2263,7 @@ GameObject:
   - component: {fileID: 1531908709}
   - component: {fileID: 1531908708}
   - component: {fileID: 1531908707}
+  - component: {fileID: 1531908711}
   m_Layer: 0
   m_Name: AnswerR
   m_TagString: Untagged
@@ -2230,7 +2286,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2301,6 +2357,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2025367051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531908711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531908706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f982a2040fe6cc469cef0c48bab6ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answer_pos: 3
 --- !u!1 &1593108840
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,6 +2839,7 @@ GameObject:
   - component: {fileID: 2025367049}
   - component: {fileID: 2025367048}
   - component: {fileID: 2025367052}
+  - component: {fileID: 2025367053}
   m_Layer: 0
   m_Name: Section with answers
   m_TagString: Untagged
@@ -2861,9 +2931,9 @@ Transform:
   m_LocalScale: {x: 8, y: 1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1531908710}
-  - {fileID: 596372058}
   - {fileID: 1135350264}
+  - {fileID: 596372058}
+  - {fileID: 1531908710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2025367052
@@ -2881,13 +2951,45 @@ MonoBehaviour:
   Left: {fileID: 1135350260}
   Middle: {fileID: 596372054}
   Right: {fileID: 1531908706}
+  UI_Question: {fileID: 1826358453}
   UI_Left: {fileID: 1339013804}
   UI_Middle: {fileID: 775324306}
   UI_Right: {fileID: 1207234125}
+  Score_object: {fileID: 1045568608}
   platform_number: 0
   player: {fileID: 1045568608}
   player_platform: 0
   correct_answer: 0
+  jsonFile: {fileID: 4900000, guid: 042e9c20849bb7a4082a189658331917, type: 3}
+  questionTheme: Broekregning
+  questionId: 1
+--- !u!54 &2025367053
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025367047}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

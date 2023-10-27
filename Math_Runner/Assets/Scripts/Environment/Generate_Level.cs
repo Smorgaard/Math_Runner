@@ -8,8 +8,16 @@ public class Generate_Level : MonoBehaviour
     public int z_Pos = 100;
     public bool creating_section = false;
     public int section_number;
-    
-    
+
+    private void Start()
+    {
+        if (creating_section == false)
+        {
+            creating_section = true;
+            StartCoroutine(Generate_Section());
+        }
+    }
+
     void Update()
     {
         if (creating_section == false)
