@@ -31,6 +31,9 @@ public class Question_Selector : MonoBehaviour
     public int questionId;
     private MathQuestionsContainer questionsContainer;
 
+    public AudioSource correctAnswerChime;
+    public AudioSource wrongAnswerbeep;
+
     [Serializable]
     public class MathQuestion
     {
@@ -140,10 +143,12 @@ public class Question_Selector : MonoBehaviour
         if (pos == correct_answer)
         {
             Score_object.GetComponent<LevelDistance>().Distanc_Run += 500;
+            correctAnswerChime.Play();
         }
         else
         {
             Score_object.GetComponent<LevelDistance>().Distanc_Run -= 500;
+            wrongAnswerbeep.Play();
         }
 
         Left.SetActive(false);
