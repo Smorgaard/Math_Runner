@@ -34,6 +34,8 @@ public class Question_Selector : MonoBehaviour
     public AudioSource correctAnswerChime;
     public AudioSource wrongAnswerbeep;
 
+    public GameObject Player_Object;
+
     [Serializable]
     public class MathQuestion
     {
@@ -63,7 +65,7 @@ public class Question_Selector : MonoBehaviour
         {
             Debug.LogError("JSON file is not assigned.");
         }
-
+        Debug.Log(questionsContainer);
   
         platform_number = (int)((transform.position.z - 25) / section_lenght);
 
@@ -142,11 +144,13 @@ public class Question_Selector : MonoBehaviour
     {
         if (pos == correct_answer)
         {
+            Player_Object.GetComponent<Player_Movement>().Move_Speed += 1;
             Score_object.GetComponent<LevelDistance>().Distanc_Run += 500;
             correctAnswerChime.Play();
         }
         else
         {
+            Player_Object.GetComponent<Player_Movement>().Move_Speed -= 1;
             Score_object.GetComponent<LevelDistance>().Distanc_Run -= 500;
             wrongAnswerbeep.Play();
         }

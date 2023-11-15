@@ -363,6 +363,7 @@
 "Assets/Scripts/Environment/Level_Boundary.cs"
 "Assets/Scripts/LevelDistance.cs"
 "Assets/Scripts/LevelStater.cs"
+"Assets/Scripts/Menu/MainMenuFunction.cs"
 "Assets/Scripts/Player/Player_Movement.cs"
 "Assets/Scripts/Question_Selector.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

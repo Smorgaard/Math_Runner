@@ -764,7 +764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &657412264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4098,6 +4098,7 @@ MonoBehaviour:
   questionId: 1
   correctAnswerChime: {fileID: 2001398535}
   wrongAnswerbeep: {fileID: 168359363}
+  Player_Object: {fileID: 844100481}
 --- !u!54 &2025367053
 Rigidbody:
   m_ObjectHideFlags: 0
